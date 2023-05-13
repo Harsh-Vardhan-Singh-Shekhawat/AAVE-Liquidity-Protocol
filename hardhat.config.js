@@ -4,9 +4,9 @@ require('dotenv').config();
 module.exports = {
   solidity: "0.8.18",
   networks:{
-    goerli:{
-      url: process.env.GOERLI_ENDPOINT,
-      accounts:[process.env.PRIVATE_KEY]
+    sepolia:{
+      url: "https://eth-sepolia.g.alchemy.com/v2/3wiQzga-y-jvMTuBl_oKverlexc6kSp6",
+      accounts:[`0x${process.env.PRIVATE_KEY}`]
     }
   }
 };
